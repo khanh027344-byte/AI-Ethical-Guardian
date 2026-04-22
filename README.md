@@ -1,18 +1,66 @@
-# AI Ethical Guardian
+import streamlit as st
+import pandas as pd
+import numpy as np
+from survey_module import create_survey_form
+from risk_predictor import predict_risk
+from gdpr_checker import check_gdpr_compliance
 
-## Giới thiệu
-AI Ethical Guardian là một dự án nhằm đảm bảo rằng trí tuệ nhân tạo hoạt động theo cách đạo đức và có trách nhiệm. Nó tập trung vào việc phát hiện và giảm thiểu các vấn đề đạo đức trong các ứng dụng AI.
+# Thiết lập trang Streamlit
+st.set_page_config(
+    page_title="AI Ethical Guardian",
+    page_icon="🛡️",
+    layout="wide"
+)
 
-## Tính năng
-- Phát hiện các vấn đề đạo đức trong dữ liệu và mô hình.
-- Cung cấp báo cáo và đề xuất cải tiến.
-- Tích hợp dễ dàng với các hệ thống AI hiện tại.
+# Tiêu đề chính
+st.title("🛡️ AI Ethical Guardian")
+st.markdown("### Đánh giá rủi ro đạo đức và an ninh của các ứng dụng AI")
 
-## Công nghệ
-- Python
-- TensorFlow
-- Scikit-learn
-- Flask
+# Menu chính
+menu = st.sidebar.radio(
+    "📌 Chọn chức năng:",
+    ["🏠 Trang chủ", "📋 Khảo sát", "📊 Dự báo rủi ro", "✅ Kiểm định GDPR"]
+)
 
-## Cơ sở toán học
-Sử dụng các phương pháp xác suất và thống kê để phân tích dữ liệu và phát hiện ra các vấn đề đạo đức. Cụ thể, chúng tôi áp dụng lý thuyết quyết định và học máy để tối ưu hóa các mô hình AI.
+# Trang chủ
+if menu == "🏠 Trang chủ":
+    st.markdown("""
+    ## 👋 Chào mừng đến AI Ethical Guardian!
+    
+    Dự án này giúp bạn:
+    - 📋 **Khảo sát người dùng** về nhận thức rủi ro AI
+    - 📊 **Dự báo rủi ro** sử dụng mô hình hồi quy tuyến tính
+    - ✅ **Kiểm định GDPR** để đảm bảo tuân thủ quy định bảo vệ dữ liệu
+    
+    ### 📐 Cơ sở toán học
+    
+    **Hồi quy tuyến tính:** y = mx + b
+    
+    **Sai số tuyệt đối:** Δx = |x - a|
+    
+    Hãy bắt đầu từ menu bên trái! 🚀
+    """)
+
+# Khảo sát người dùng
+elif menu == "📋 Khảo sát":
+    st.header("📋 Khảo Sát Người Dùng")
+    create_survey_form()
+
+# Dự báo rủi ro
+elif menu == "📊 Dự báo rủi ro":
+    st.header("📊 Dự Báo Rủi Ro")
+    predict_risk()
+
+# Kiểm định GDPR
+elif menu == "✅ Kiểm định GDPR":
+    st.header("✅ Kiểm Định Tuân Thủ GDPR")
+    check_gdpr_compliance()
+
+# Footer
+st.markdown("---")
+st.markdown("""
+<div align="center">
+    <p>🛡️ <b>AI Ethical Guardian</b> - Bảo vệ đạo đức trong thế giới AI</p>
+    <p>👤 Tác giả: <b>Phạm Đình Gia Khánh (9A6)</b></p>
+</div>
+""", unsafe_allow_html=True)
