@@ -176,9 +176,3 @@ AI-Ethical-Guardian/
 - 🏫 Lớp: 9A6 - Vinschool
 - 💻 GitHub: [@khanh027344-byte](https://github.com/khanh027344-byte)
 - 📅 Năm học: 2025-2026 (Học kỳ II)
-
----
-
-## 📝 License
-
-Dự án này được cấp phép dưới **MIT License**.
