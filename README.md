@@ -1,14 +1,23 @@
 # AI Ethical Guardian
-Dự án Capstone Tin học 9 - Vinschool
 
-## 1. Mục tiêu
-Đánh giá rủi ro an ninh và đạo đức của các ứng dụng AI.
+## Giới thiệu
+AI Ethical Guardian là một dự án nhằm đảm bảo rằng trí tuệ nhân tạo hoạt động theo cách đạo đức và có trách nhiệm. Nó tập trung vào việc phát hiện và giảm thiểu các vấn đề đạo đức trong các ứng dụng AI.
 
-## 2. Hoạt động dự kiến (4 tuần)
-- Tuần 1: Khảo sát thói quen dùng AI của học sinh.
-- Tuần 2: Đánh giá bảo mật và quyền riêng tư (GDPR).
-- Tuần 3: Xây dựng mô hình toán học dự báo rủi ro.
-- Tuần 4: Kiểm thử hệ thống và báo cáo.
+## Tính năng
+- Phát hiện các vấn đề đạo đức trong dữ liệu và mô hình.
+- Cung cấp báo cáo và đề xuất cải tiến.
+- Tích hợp dễ dàng với các hệ thống AI hiện tại.
 
-## 3. Thành viên
-- [Phạm Đình Gia Khánh]
+## Công nghệ
+- Python
+- TensorFlow
+- Scikit-learn
+- Flask
+
+## Cơ sở toán học
+Sử dụng các phương pháp xác suất và thống kê để phân tích dữ liệu và phát hiện ra các vấn đề đạo đức. Cụ thể, chúng tôi áp dụng lý thuyết quyết định và học máy để tối ưu hóa các mô hình AI.
+
+## Hướng dẫn cài đặt
+1. Clone repository này về máy của bạn:
+   ```bash
+   git clone https://github.com/khanh027344-byte/AI-Ethical-Guardian.git
